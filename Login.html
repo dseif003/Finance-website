@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="Index.js"></script>
+<title>Untitled Document</title>
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script><![end if]-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<!--Nav-Bar logo--><h1> Financial Literacy Coalition of Texas </h1>
+<nav>
+    <ul>	 
+      	<li class="active"><a href="index.html">Home</a></li>
+        <li><a href="ToolsHub.html">Tools hub</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+	</ul>
+      </nav>
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+   <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+    </div>
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+ <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+      <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+   <button onclick="document.getElementById('id02').style.display='block'">Create account</button>
+    </header>
+	
+	<footer>
+		
+	</footer>
+	
+</body>
+	
+</html>
